@@ -34,6 +34,7 @@ yarn-error.log*
 .env*
 .env.local
 
+.github
 # vercel
 .vercel
 
@@ -58,3 +59,4 @@ node_modules
 
 # Hardhat Ignition default folder for deployments against a local node
 ignition/deployments/chain-31337
+
