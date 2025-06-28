@@ -6,7 +6,7 @@ import { Usetokenfactory, CHAIN_CONFIGS } from "../../usetokenfactory";
 import { useRouter } from "next/navigation";
 
 function MintSection() {
-  const { ready, authenticated, logout } = usePrivy();
+  const { ready, authenticated } = usePrivy();
   const { wallets } = useWallets();
   const [name, setName] = useState("");
   const [symbol, setSymbol] = useState("");
@@ -63,16 +63,11 @@ function MintSection() {
 }
 
 function GlobalMenu() {
-  const { ready, authenticated, logout } = usePrivy();
+  const { ready, authenticated } = usePrivy();
   if (!ready || !authenticated) return null;
   return (
     <div className="fixed top-4 right-6 z-50">
-      <button
-        onClick={logout}
-        className="bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700 transition shadow-lg"
-      >
-        Logout
-      </button>
+     
     </div>
   );
 }

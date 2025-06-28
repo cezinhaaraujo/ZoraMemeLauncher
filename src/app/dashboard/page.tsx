@@ -6,7 +6,7 @@ import { useMintableToken } from "../../useMintableToken";
 import { useRouter } from "next/navigation";
 
 function MintSection() {
-  const { ready, authenticated, logout } = usePrivy();
+  const { ready, authenticated } = usePrivy();
   const { wallets } = useWallets();
   const [amount, setAmount] = useState("");
   const [txHash, setTxHash] = useState("");

@@ -31,3 +31,5 @@ export default function RootLayout({
     </html>
   );
 }
+
+// No code change needed; icon.png in src/app will be used as the favicon by Next.js app directory routing.
